@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_chess_perft
+
+import std::io
+use ltl_chess_perft as lib
+
+fn main() {
+    io::println("ltl_chess_perft demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
